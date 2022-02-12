@@ -1,0 +1,17 @@
+mutation AccountRegister(
+  $email: String!
+  $password: String!
+  $channel: String!
+) {
+  accountRegister(
+    input: { email: $email, password: $password, channel: $channel }
+  ) {
+    user {
+      ...UserFragment
+    }
+    errors {
+      field
+      code
+    }
+  }
+}

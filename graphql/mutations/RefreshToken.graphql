@@ -1,0 +1,9 @@
+mutation RefreshToken($csrfToken: String!) {
+  tokenRefresh(csrfToken: $csrfToken) {
+    token
+    errors {
+      code
+      message
+    }
+  }
+}

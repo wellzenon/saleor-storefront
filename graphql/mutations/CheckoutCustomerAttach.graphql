@@ -1,0 +1,8 @@
+mutation CheckoutCustomerAttach($customerId: ID!, $token: UUID!) {
+  checkoutCustomerAttach(customerId: $customerId, token: $token) {
+    errors {
+      field
+      code
+    }
+  }
+}

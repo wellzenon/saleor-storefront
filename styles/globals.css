@@ -1,0 +1,52 @@
+:root {
+  --background-color: hsl(224, 13%, 90%);
+  --container-color: hsl(220, 12%, 95%);
+  --card-color: white;
+  --border-color: #f4f4f6;
+  --divider-color: hsl(265, 19.7%, 76.1%);
+  --foreground-color: #494949;
+  --foreground-color-faded: #797979;
+  --accent-color: hsl(197, 77%, 49%);
+  --accent-color-faded: hsl(197, 60%, 65%);
+  --box-shadow: 1px 1px 10px hsla(0, 0%, 32%, 50%);
+}
+
+[data-theme="dark"] {
+  --background-color: hsl(220, 12%, 5%);
+  --container-color: hsl(220, 12%, 10%);
+  --card-color: hsl(216, 4%, 25%);
+  --border-color: hsl(217, 9%, 29%);
+  --divider-color: rgb(76, 71, 83);
+  --foreground-color: hsl(240, 10%, 96%);
+  --foreground-color-faded: hsl(240, 10%, 75%);
+  --accent-color: hsl(231, 82%, 48%);
+  --accent-color-faded: hsl(231, 71%, 59%);
+}
+
+:root {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border-color: var(--border-color);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

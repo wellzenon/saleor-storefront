@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.container {
+  grid-column: span 2 / span 2;
+}
+
+.list > li:not(:first-child) {
+  border-top: solid 1px;
+  border-image: linear-gradient(
+      to right,
+      transparent 10%,
+      var(--divider-color) 50%,
+      transparent 90%
+    )
+    1;
+}
+
+.list-item {
+  padding: 1.5rem 0;
+}
+
+.list-anchor {
+  display: flex;
+}
+
+.image-aspect {
+  width: 12rem;
+  height: 12rem;
+  flex-shrink: 0;
+  object-position: center;
+  object-fit: cover;
+  background-color: var(--card-color);
+  border-radius: 0.25rem;
+  position: relative;
+  /*padding-top: min(60vh, 100%); */
+}
+
+.list-container {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.list-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-title {
+  padding-right: 1.5rem;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.list-price {
+  text-align: right;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.remove-button {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--foreground-color-faded);
+}

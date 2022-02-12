@@ -1,0 +1,98 @@
+.background {
+  background-color: var(--card-color);
+  box-shadow: var(--box-shadow);
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+.menu-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2rem;
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--foreground-color-faded);
+}
+.menu-link:hover {
+  color: var(--accent-color);
+}
+
+.theme-changer button {
+  display: flex;
+  padding: 0.25rem;
+  align-items: center;
+  height: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border: var(--foreground-color-faded) solid 1px;
+  border-radius: 0.25rem;
+  background-color: var(--card-color);
+  fill: var(--foreground-color);
+}
+
+.button:hover {
+  color: var(--card-color);
+  background-color: var(--foreground-color);
+  fill: var(--card-color);
+}
+
+.button-accent {
+  composes: button;
+  color: var(--card-color);
+  background-color: var(--accent-color);
+}
+
+.button-accent:hover {
+  background-color: var(--accent-color-faded);
+}
+
+.product-card {
+  background-color: var(--card-color);
+  border: var(--border-color) solid 1px;
+  border-radius: 0.5rem;
+}
+
+.product-summary {
+  padding: 0.5rem 1rem;
+  border-top: var(--border-color) solid 0.2rem;
+}
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-title {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--foreground-color);
+}
+.product-category {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.25rem 0;
+  color: var(--foreground-color-faded);
+}
+.product-image-aspect {
+  position: relative;
+  padding-top: 100%;
+}

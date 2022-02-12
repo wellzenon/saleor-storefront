@@ -1,0 +1,14 @@
+mutation CreateToken($email: String!, $password: String!) {
+  tokenCreate(email: $email, password: $password) {
+    token
+    refreshToken
+    csrfToken
+    user {
+      ...UserFragment
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

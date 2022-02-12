@@ -1,0 +1,21 @@
+query ProductVariantByID($id: ID!) {
+  productVariant(id: $id, channel: "default-channel") {
+    id
+    name
+    product {
+      id
+      name
+      description
+      media {
+        url
+      }
+      category {
+        name
+      }
+      variants {
+        id
+        name
+      }
+    }
+  }
+}

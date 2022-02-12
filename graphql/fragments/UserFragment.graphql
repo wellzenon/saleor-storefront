@@ -1,0 +1,20 @@
+fragment UserFragment on User {
+  id
+  email
+  firstName
+  lastName
+  isStaff
+  metadata {
+    key
+    value
+  }
+  defaultShippingAddress {
+    ...AddressFragment
+  }
+  defaultBillingAddress {
+    ...AddressFragment
+  }
+  addresses {
+    ...AddressFragment
+  }
+}
